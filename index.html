@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2023 Halloween Pets</title>
+    <style>
+      /*--CSS--*/
+      @import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Poppins:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+      h1 {
+        font-family: "Jolly Lodger";
+        letter-spacing: 3px;
+        font-size: 60px;
+        text-align: center;
+        color: #d8aa44;
+        margin: 20px 0;
+      }
+      h2 {
+        color: #d8aa44;
+
+        text-align: center;
+        font-size: 38px;
+        font-family: "cwTeXYen", sans-serif;
+        margin: 5px 0;
+        /*border: solid 2px #fff;*/
+      }
+      h2 a {
+        text-decoration: none;
+        color: #d8aa44;
+      }
+      h2 a:hover {
+        color: azure;
+      }
+      body {
+        background-color: #130904;
+      }
+      .bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -999;
+      }
+      .bg img {
+        max-height: 100%;
+        width: 100%;
+        object-fit: contain;
+        z-index: -999;
+      }
+      .item_img {
+        /*border: 2px solid #fff;*/
+        text-align: center;
+        position: relative;
+
+        margin: 10px 0;
+        height: 500px;
+      }
+      #img-light,
+      #img-pot {
+        position: absolute;
+        object-fit: contain;
+        width: 500px;
+        height: 400px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        margin: 20px 0;
+      }
+
+      #img-light {
+        /*border: 1px solid #eee;*/
+        display: none;
+        /*margin: 0px 0 500px 0px;*/
+        padding-bottom: 80px;
+        z-index: 1;
+      }
+      #img-pot:hover ~ #img-light {
+        display: block;
+        z-index: 2;
+        /*transform: 0.5s;*/
+      }
+    </style>
+    <!--
+    <script>
+      const imgPot = document.getElementById("img-pot");
+      const imgLight = document.getElementById("img-light");
+
+      imgPot.addEventListener("mouseenter", () => {
+        imgLight.style.display = "block";
+      });
+
+      imgPot.addEventListener("mouseleave", () => {
+        imgLight.style.display = "none";
+      });
+    </script>-->
+  </head>
+  <body>
+    <div class="bg">
+      <img src="images/star.png" alt="" />
+    </div>
+    <h1>HALLOWEEN</h1>
+    <h2><a href="home.html">歡迎來到~魔法鍋鍋~</a></h2>
+    <div class="item_img">
+      <a href="home.html">
+        <img id="img-pot" src="images/item-pot+cloud.png" alt="" />
+        <img id="img-light" src="images/item-light3.png" alt="" />
+      </a>
+    </div>
+  </body>
+</html>
