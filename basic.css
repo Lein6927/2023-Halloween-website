@@ -1,0 +1,33 @@
+/*基本架設*/
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Poppins:wght@500&display=swap");
+/*font-family: "Jolly Lodger";*/
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+/*font-family: "cwTeXYen", sans-serif;*/
+
+body {
+  background-color: #130904;
+  font-family: "cwTeXYen", sans-serif;
+  color: #d8aa44;
+  text-align: center;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+}
+.bg img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -999;
+}
+h1 {
+  font-family: "cwTeXYen", sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 20px 0;
+  color: #d8aa44;
+}
