@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="basic.css" />
     <title>2023 Halloween Pets</title>
     <style>
       /*--CSS--*/
@@ -18,7 +19,6 @@
       }
       h2 {
         color: #d8aa44;
-
         text-align: center;
         font-size: 38px;
         font-family: "cwTeXYen", sans-serif;
@@ -32,23 +32,7 @@
       h2 a:hover {
         color: azure;
       }
-      body {
-        background-color: #130904;
-      }
-      .bg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -999;
-      }
-      .bg img {
-        max-height: 100%;
-        width: 100%;
-        object-fit: contain;
-        z-index: -999;
-      }
+
       .item_img {
         /*border: 2px solid #fff;*/
         text-align: center;
@@ -74,27 +58,13 @@
         display: none;
         /*margin: 0px 0 500px 0px;*/
         padding-bottom: 80px;
-        z-index: 1;
       }
       #img-pot:hover ~ #img-light {
         display: block;
-        z-index: 2;
+
         /*transform: 0.5s;*/
       }
     </style>
-    <!--
-    <script>
-      const imgPot = document.getElementById("img-pot");
-      const imgLight = document.getElementById("img-light");
-
-      imgPot.addEventListener("mouseenter", () => {
-        imgLight.style.display = "block";
-      });
-
-      imgPot.addEventListener("mouseleave", () => {
-        imgLight.style.display = "none";
-      });
-    </script>-->
   </head>
   <body>
     <div class="bg">
