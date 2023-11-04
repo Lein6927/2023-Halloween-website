@@ -35,8 +35,8 @@ function mix() {
     window.location.href = "result.html";
   }
   if (
-    selectedImagesArray.includes("M1") &&
-    selectedImagesArray.includes("M2")
+    selectedImagesArray.includes("M4") &&
+    selectedImagesArray.includes("M3")
   ) {
     window.location.href = "result2.html";
   }
