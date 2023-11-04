@@ -18,7 +18,7 @@
       .area_material {
         width: 650px;
         /*height: 500px;*/
-        border: solid #fff 2px;
+        /*border: solid #fff 2px;*/
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -33,6 +33,10 @@
         width: 180px;
         height: 200px;
         float: left;
+      }
+      .img_material :hover {
+        cursor: pointer;
+        background-color: rgba(255, 226, 162, 0.4);
       }
       .img_material img {
         /*單個材料圖片*/
@@ -68,27 +72,27 @@
     <div class="area_material">
       <div class="img_material" id="M1">
         <img
-          src="images/item-1crystal.png"
+          src="images/items/item-1crystal.png"
           alt="神秘水晶"
           onclick="toggleSelectImage('M1')"
         />
       </div>
       <div class="img_material" id="M2">
         <img
-          src="images/item-2slime.png"
+          src="images/items/item-2slime.png"
           alt="黏稠液體"
           onclick="toggleSelectImage('M2')"
         />
       </div>
       <div class="img_material" id="M3">
         <img
-          src="images/item-3feather.png"
+          src="images/items/item-3feather.png"
           alt="鳳凰羽毛"
           onclick="toggleSelectImage('M3')"
         />
       </div>
       <div class="img_material" id="M4">
-        <img src="" alt="" />
+        <img src="images/items/item-4leaf.png" alt="水見草" />
       </div>
       <div class="img_material" id="M5">
         <img src="" alt="" />
