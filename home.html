@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halloween</title>
-    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="css/basic.css" />
     <style>
       h1 {
-        margin-top: 50px;
+        margin-top: 10px;
         font-size: 50px;
       }
       h3 {
         text-align: center;
         /*border: solid 2px;*/
-        font-size: 30px;
+        font-size: 20px;
+        margin: 10px 0;
       }
       .area_material {
         width: 650px;
@@ -60,7 +61,7 @@
         cursor: pointer;
       }
     </style>
-    <script src="magic.js"></script>
+    <script src="js/magic.js"></script>
   </head>
   <body>
     <div class="bg">
@@ -68,7 +69,6 @@
     </div>
     <h1>選擇喜歡的材料吧</h1>
     <h3>您可以任意選擇2種材料加入鍋中</h3>
-    <p>說明文字</p>
     <div class="area_material">
       <div class="img_material" id="M1">
         <img
@@ -99,10 +99,18 @@
         />
       </div>
       <div class="img_material" id="M5">
-        <img src="" alt="" onclick="toggleSelectImage('M5')" />
+        <img
+          src="images/items/item-5butterfly.png"
+          alt="閃粉蝶"
+          onclick="toggleSelectImage('M5')"
+        />
       </div>
       <div class="img_material" id="M6">
-        <img src="" alt="" onclick="toggleSelectImage('M6')" />
+        <img
+          src="images/items/item-6question.png"
+          alt="?"
+          onclick="toggleSelectImage('M6')"
+        />
       </div>
     </div>
     <!--area_material結束-->
